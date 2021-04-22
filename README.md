@@ -17,7 +17,7 @@ Using classification model with logistic regression and naive bayes, we want to 
 
 With veganism on the rise and competing with other fad-diets, it has come to light that we could take this opportunity to specialise in products that will offer a win-win situation. 
 
->What if we could market products, where both dietary community can consume?
+>What if we could market products suitable for both dietary community?
 
 Using NLTK, TfidfVectoriser and logistic regression model, we are able to identify the top important words in the conversation among the community and dive deep into the list of ingredients that is being discussed. This shines light to what is the common acceptable ingredients used and the rest would be up to the marketing team to identify its feasiblity of production.
 
@@ -27,6 +27,10 @@ The classification model will help to identify and pinpoint the company next R&D
 
 ## Technical Findings
 
-Using Tfidf and Logistic Regression, we find the **accuracy** of the model at 0.94 with **sensitivity** at 0.97 and **specificity** at 0.9. Overall false positive and false negative counts were low and adjustment on the threshold is not required as we are interested in the top keywords of respective reddits. 
+Using Tfidf and Logistic Regression, we find the **accuracy** of the model at 0.95 with **sensitivity** at 0.98 and **specificity** at 0.93. Overall false positive and false negative counts were low and adjustment on the threshold is not required as we are interested in the top keywords of respective reddits. 
 
 ![Confusion Matrix](/images/Confusion_Matrix.png)
+
+Top keywords by coeficient of logistic regression model shows below
+
+![Word Importance](/images/Word_Importance.png)
